@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github Navigator</title>
+</head>
+<body>
+
+<h1>{{search_term}}</h1>
+
+{% for rp in fiveNewest %}    
+
+<h2>{{rp['counter']}}. {{rp['repositoryName']}}</h2>
+<h3> Created {{rp['createdAt']}}</h3>
+<a href="{{'https://github.com/' + rp['ownerLogin']}}"><img src="{{rp['avatarLink']}}" alt="avatar" height="42" width="42"/></a>
+{{owner_login}}
+<h3>LastCommit</h3>
+{{rp['shaString']}} {{rp['commitMessage']}}  {{rp['ownerLogin']}}
+<hr/>
+
+{% endfor %}
+
+</body>
+</html>
+
