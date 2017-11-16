@@ -17,3 +17,8 @@ Aallow it time to query the API and display - usually around 15 seconds.
 Ignore any error message in the browser during that time.
 
 Then change the query word in the URL in the browser to another one and repeat.
+
+Once it has rendered it looks like this:
+
+
+![GitHub query screenshot](screenshot.png)
